@@ -1,0 +1,53 @@
+SESSION05
+[Bài thực hành 2] Xây dựng chuỗi Prompt viết bài PR sản phẩm công nghệ
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Kỹ năng PROMPTING với AI
+Họ và tên: LƯƠNG THANH THƯ
+
+Bạn là chuyên gia nghiên cứu thị trường công nghệ B2B.
+SẢN PHẨM: Giải pháp AI Chatbot mới dành cho doanh nghiệp.
+
+NHIỆM VỤ:
+- Xác định 2-3 nhóm khách hàng mục tiêu (ví dụ: chủ doanh nghiệp SME, trưởng phòng CSKH).
+- Với mỗi nhóm, liệt kê 3-5 nỗi đau (pain points) mà sản phẩm giải quyết được.
+
+ĐỊNH DẠNG ĐẦU RA (giữ nguyên để dùng cho Prompt 2):
+[KHÁCH HÀNG MỤC TIÊU]: ...
+[PAIN POINTS]: 1. ... 2. ... 3. ...
+[TONE]: chuyên nghiệp, đáng tin cậy
+
+Prompt 2: Lập dàn ý chi tiết (Outline)
+Bạn là biên tập viên PR công nghệ.
+DỮ LIỆU TỪ BƯỚC 1 (đầu ra của Prompt 1):
+"""
+[dán toàn bộ output Prompt 1 vào đây]
+"""
+
+NHIỆM VỤ: Lập dàn ý bài PR khoảng 1000-1500 từ gồm:
+- Headline hấp dẫn
+- Lead (mở đầu) dẫn dắt từ pain points
+- Các tiêu đề con H2, H3 (mỗi tiêu đề ghi rõ ý chính + số từ dự kiến)
+- CTA (lời kêu gọi hành động) ở cuối
+
+ĐỊNH DẠNG: Markdown, dùng # / ## / ### cho từng cấp tiêu đề.
+Giữ nguyên tone: chuyên nghiệp, đáng tin cậy.
+
+Prompt 3: Viết bài hoàn chỉnh và tối ưu SEO
+Bạn là copywriter PR công nghệ, am hiểu SEO.
+NGỮ CẢNH (Prompt 1 + Prompt 2):
+"""
+[dán pain points + dàn ý đã duyệt]
+"""
+
+NHIỆM VỤ: Viết chi tiết từng phần theo đúng dàn ý, chèn tự nhiên từ khóa SEO: [từ khóa chính], [từ khóa phụ].
+CẤU TRÚC BẮT BUỘC: Headline, Lead hấp dẫn giải quyết pain points, H2/H3 đúng dàn ý, CTA rõ ràng ở cuối.
+
+RÀNG BUỘC:
+- Giữ nguyên tone chuyên nghiệp, đáng tin cậy từ đầu đến cuối.
+- Không thêm, bớt hay đổi thứ tự các phần so với dàn ý.
+
+Xử lý khi bài bị ngắt quãng (đạt max token) - dùng prompt tiếp nối:
+Bài viết bị ngắt ở câu: "[dán 1-2 câu cuối cùng]".
+Hãy viết tiếp ngay từ chỗ đó, nối khớp hoàn hảo với câu trước, giữ nguyên tone và dàn ý, không lặp lại phần đã viết, không mở đầu lại.
+
